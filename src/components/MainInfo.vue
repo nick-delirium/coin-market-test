@@ -176,7 +176,7 @@ export default {
   flex-flow: column wrap;
 }
 .col-row {
-  margin-top:25px;
+  margin-top: 25px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
