@@ -1,18 +1,32 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HeaderEl class='block' />
+    <MainInfo class='block' />
+    <TableEl />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import HeaderEl from '@/components/Header.vue';
+import MainInfo from '@/components/MainInfo.vue';
+import TableEl from '@/components/Table.vue';
 
 export default {
   name: 'home',
   components: {
-    HelloWorld,
+    MainInfo,
+    HeaderEl,
+    TableEl
   },
 };
 </script>
+
+<style lang="less" scoped>
+.block {
+  position: relative;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 0.3rem 0 0;
+  padding: 1em 1em;
+}
+</style>
